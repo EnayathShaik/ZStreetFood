@@ -36,7 +36,8 @@ public class TraineeController {
 			public String listTrainees(Model model) {
 				model.addAttribute("trainee", new Trainee());
 				model.addAttribute("listTrainees", this.traineeService.listTrainees());
-				model.addAttribute("listStates", this.masterService.listStates());
+				
+				
 				return "registerTrainee";
 			}
 			

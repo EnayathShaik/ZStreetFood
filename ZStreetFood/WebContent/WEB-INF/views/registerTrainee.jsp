@@ -21,7 +21,7 @@
 
 <form:form action="${addAction}" commandName="trainee">
 <table>
-	<c:if test="${!empty trainee.name}">
+	<c:if test="${!empty trainee.userID}">
 	<tr>
 		<td>
 			<form:label path="id">
@@ -36,76 +36,285 @@
 	</c:if>
 	<tr>
 		<td>
-			<form:label path="name">
-				<spring:message text="Name"/>
+			<form:label path="userID">
+				<spring:message text="User ID"/>
 			</form:label>
 		</td>
 		<td>
-			<form:input path="name" />
+			<form:input path="userID" />
 		</td> 
 	</tr>
 	<tr>
 		<td>
-			<form:label path="emp_code">
-				<spring:message text="Emp Code"/>
+			<form:label path="userType">
+				<spring:message text="User Type"/>
 			</form:label>
 		</td>
 		<td>
-			<form:input path="emp_code" />
+			<form:input path="userType" />
 		</td>
 	</tr>
 	
 	<tr>
 		<td>
-			<form:label path="email">
+			<form:label path="title">
+				<spring:message text="Title"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="title" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="aadharNo">
+				<spring:message text="Aadhar No"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="aadharNo" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="fName">
+				<spring:message text="First Name"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="fName" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="mName">
+				<spring:message text="Middle Name"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="mName" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="lName">
+				<spring:message text="Last Name"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="lName" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="empID">
+				<spring:message text="Emp ID"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="empID" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="dob">
+				<spring:message text="DOB"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="dob" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="fatherName">
+				<spring:message text="Father Name"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="fatherName" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="gender">
+				<spring:message text="Gender"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="gender" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="cAddress1">
+				<spring:message text="Correspondence Address Line 1"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="cAddress1" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="cAddress2">
+				<spring:message text="Correspondence Address Line 2"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="cAddress2" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="cState">
+				<spring:message text="State"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="cState" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="cDistrict">
+				<spring:message text="District"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="cDistrict" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="cCity">
+				<spring:message text="City"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="cCity" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="cPincode">
+				<spring:message text="Pincode"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="cPincode" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="cMobile">
+				<spring:message text="Mobile"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="cMobile" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="cEmail">
 				<spring:message text="Email"/>
 			</form:label>
 		</td>
 		<td>
-			<form:input path="email" />
+			<form:input path="cEmail" />
 		</td>
 	</tr>
 	
 	<tr>
 		<td>
-			<form:label path="emp_code">
-				<spring:message text="Emp Code"/>
+			<form:label path="pAddress1">
+				<spring:message text="Permanent Address Line 1"/>
 			</form:label>
 		</td>
 		<td>
-			<form:input path="emp_code" />
+			<form:input path="pAddress1" />
 		</td>
 	</tr>
 	
 	<tr>
 		<td>
-			<form:label path="contactNo">
-				<spring:message text="Mobile No"/>
+			<form:label path="pAddress2">
+				<spring:message text="Permanent Address Line 2"/>
 			</form:label>
 		</td>
 		<td>
-			<form:input path="contactNo" />
+			<form:input path="pAddress2" />
 		</td>
 	</tr>
 	
 	<tr>
 		<td>
-			<form:label path="address">
-				<spring:message text="Address"/>
+			<form:label path="pState">
+				<spring:message text="State"/>
 			</form:label>
 		</td>
 		<td>
-			<form:input path="address" />
+			<form:input path="pState" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="pDistrict">
+				<spring:message text="District"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="pDistrict" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="pCity">
+				<spring:message text="City"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="pCity" />
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			<form:label path="pPincode">
+				<spring:message text="Pincode"/>
+			</form:label>
+		</td>
+		<td>
+			<form:input path="pPincode" />
 		</td>
 	</tr>
 	
 	<tr>
 		<td colspan="2">
-			<c:if test="${!empty trainee.name}">
+			<c:if test="${!empty trainee.userID}">
 				<input type="submit"
 					value="<spring:message text="Edit trainee"/>" />
 			</c:if>
-			<c:if test="${empty trainee.name}">
+			<c:if test="${empty trainee.userID}">
 				<input type="submit"
 					value="<spring:message text="Add trainee"/>" />
 			</c:if>
@@ -132,11 +341,11 @@
 	
 		<tr>
 			<td>${trainee.id}</td>
-			<td>${trainee.name}</td>
-			<td>${trainee.emp_code}</td>
-			<td>${trainee.email}</td>
-			<td>${trainee.contactNo}</td>
-			<td>${trainee.address}</td>
+			<td>${trainee.userID}</td>
+			<td>${trainee.userType}</td>
+			<td>${trainee.title}</td>
+			<td>${trainee.aadharNo}</td>
+			<td>${trainee.fName}</td>
 			<td><a href="<c:url value='/trainee/trainee/edit/${trainee.id}' />" >Edit</a></td>
 			<td><a href="<c:url value='/trainee/trainee/remove/${trainee.id}' />" >Delete</a></td>
 		</tr>

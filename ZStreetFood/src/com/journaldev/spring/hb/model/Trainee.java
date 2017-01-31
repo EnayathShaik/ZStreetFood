@@ -16,99 +16,192 @@ public class Trainee {
 	@SequenceGenerator(name = "id_Sequence", sequenceName = "TRAINEE_SEQ", allocationSize=1, initialValue=1)
 	private int id;
 	
-	private String name;
-	
-	private String emp_code;
-	
-	private String email;
-	
-	private String contactNo;
-	
-	private String address;
-	
-	/**
-	 * @return the id
-	 */
+	private String userID;
+	private String userType;
+	private String title;
+	private String aadharNo;
+	private String fName;
+	private String mName;
+	private String lName;
+	private String empID;
+	private String dob;
+	private String fatherName;
+	private String gender;
+	private String cAddress1;
+	private String cAddress2;
+	private int cState;
+	private int cDistrict;
+	private int cCity;
+	private String cPincode;
+	private String cMobile;
+	private String cEmail;
+	private String pAddress1;
+	private String pAddress2;
+	private int pState;
+	private int pDistrict;
+	private int pCity;
+	private String pPincode;
+	/*private String expBG;
+	private String yFSEmp;
+	private String mFSEmp;
+	private String monSession;
+	private String sessionConducted;
+	private String ZTrainingInstitute_ID;
+	private String ZTrainer_ID;*/
 	public int getId() {
 		return id;
 	}
-
-	/**
-	 * @param id the id to set
-	 */
 	public void setId(int id) {
 		this.id = id;
 	}
-
-	/**
-	 * @return the name
-	 */
-	public String getName() {
-		return name;
+	public String getUserID() {
+		return userID;
 	}
-
-	/**
-	 * @param name the name to set
-	 */
-	public void setName(String name) {
-		this.name = name;
+	public void setUserID(String userID) {
+		this.userID = userID;
 	}
-
-	/**
-	 * @return the emp_code
-	 */
-	public String getEmp_code() {
-		return emp_code;
+	public String getUserType() {
+		return userType;
 	}
-
-	/**
-	 * @param emp_code the emp_code to set
-	 */
-	public void setEmp_code(String emp_code) {
-		this.emp_code = emp_code;
+	public void setUserType(String userType) {
+		this.userType = userType;
 	}
-
-	/**
-	 * @return the email
-	 */
-	public String getEmail() {
-		return email;
+	public String getTitle() {
+		return title;
 	}
-
-	/**
-	 * @param email the email to set
-	 */
-	public void setEmail(String email) {
-		this.email = email;
+	public void setTitle(String title) {
+		this.title = title;
 	}
-
-	/**
-	 * @return the contactNo
-	 */
-	public String getContactNo() {
-		return contactNo;
+	public String getAadharNo() {
+		return aadharNo;
 	}
-
-	/**
-	 * @param contactNo the contactNo to set
-	 */
-	public void setContactNo(String contactNo) {
-		this.contactNo = contactNo;
+	public void setAadharNo(String aadharNo) {
+		this.aadharNo = aadharNo;
 	}
-
-	/**
-	 * @return the address
-	 */
-	public String getAddress() {
-		return address;
+	public String getfName() {
+		return fName;
 	}
-
-	/**
-	 * @param address the address to set
-	 */
-	public void setAddress(String address) {
-		this.address = address;
+	public void setfName(String fName) {
+		this.fName = fName;
 	}
-
-	
+	public String getmName() {
+		return mName;
+	}
+	public void setmName(String mName) {
+		this.mName = mName;
+	}
+	public String getlName() {
+		return lName;
+	}
+	public void setlName(String lName) {
+		this.lName = lName;
+	}
+	public String getEmpID() {
+		return empID;
+	}
+	public void setEmpID(String empID) {
+		this.empID = empID;
+	}
+	public String getDob() {
+		return dob;
+	}
+	public void setDob(String dob) {
+		this.dob = dob;
+	}
+	public String getFatherName() {
+		return fatherName;
+	}
+	public void setFatherName(String fatherName) {
+		this.fatherName = fatherName;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public String getcAddress1() {
+		return cAddress1;
+	}
+	public void setcAddress1(String cAddress1) {
+		this.cAddress1 = cAddress1;
+	}
+	public String getcAddress2() {
+		return cAddress2;
+	}
+	public void setcAddress2(String cAddress2) {
+		this.cAddress2 = cAddress2;
+	}
+	public int getcState() {
+		return cState;
+	}
+	public void setcState(int cState) {
+		this.cState = cState;
+	}
+	public int getcDistrict() {
+		return cDistrict;
+	}
+	public void setcDistrict(int cDistrict) {
+		this.cDistrict = cDistrict;
+	}
+	public int getcCity() {
+		return cCity;
+	}
+	public void setcCity(int cCity) {
+		this.cCity = cCity;
+	}
+	public String getcPincode() {
+		return cPincode;
+	}
+	public void setcPincode(String cPincode) {
+		this.cPincode = cPincode;
+	}
+	public String getcMobile() {
+		return cMobile;
+	}
+	public void setcMobile(String cMobile) {
+		this.cMobile = cMobile;
+	}
+	public String getcEmail() {
+		return cEmail;
+	}
+	public void setcEmail(String cEmail) {
+		this.cEmail = cEmail;
+	}
+	public String getpAddress1() {
+		return pAddress1;
+	}
+	public void setpAddress1(String pAddress1) {
+		this.pAddress1 = pAddress1;
+	}
+	public String getpAddress2() {
+		return pAddress2;
+	}
+	public void setpAddress2(String pAddress2) {
+		this.pAddress2 = pAddress2;
+	}
+	public int getpState() {
+		return pState;
+	}
+	public void setpState(int pState) {
+		this.pState = pState;
+	}
+	public int getpDistrict() {
+		return pDistrict;
+	}
+	public void setpDistrict(int pDistrict) {
+		this.pDistrict = pDistrict;
+	}
+	public int getpCity() {
+		return pCity;
+	}
+	public void setpCity(int pCity) {
+		this.pCity = pCity;
+	}
+	public String getpPincode() {
+		return pPincode;
+	}
+	public void setpPincode(String pPincode) {
+		this.pPincode = pPincode;
+	}
 }

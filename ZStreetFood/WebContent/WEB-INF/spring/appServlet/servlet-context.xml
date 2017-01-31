@@ -84,6 +84,12 @@
 	<beans:bean id="traineeService" class="com.journaldev.spring.service.TraineeServiceImpl">
 		<beans:property name="traineeDAO" ref="traineeDAO"></beans:property>
 	</beans:bean>
+	<beans:bean id="adminDAO" class="com.journaldev.spring.dao.AdminDAOImpl">
+		<beans:property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
+	</beans:bean>
+	<beans:bean id="adminService" class="com.journaldev.spring.service.AdminServiceImpl">
+		<beans:property name="adminDAO" ref="adminDAO"></beans:property>
+	</beans:bean>
 	
 	<context:component-scan base-package="com.journaldev.spring" />
 	
